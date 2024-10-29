@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilo para o corpo do site em resoluções normais */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #0F0F0F;
+}
+
+.navbar-toggler {
+    border-color: white; /* Muda a cor da borda do botão */
+}
+
+.navbar-toggler-icon {
+    background-color: #838383; /* Muda a cor do ícone do botão */
+}
+
+/* Para mudar a cor do botão quando estiver ativo */
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem #838383; /* Efeito de foco */
+}
+
+.navbar-nav .nav-link.active {
+    color: #838383; /* Cor personalizada para o link ativo */
+}
+  
+  .nav-link{
+    color: white;
+  }
+  
+  .nav-link:hover{
+    color: #0B5ED7;
+  }
+
+section {
+    height: 100%; /* Cada seção ocupa um quarto da altura da tela */
+    margin-top: 20%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cardSociais {
+    border: 1px solid black;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, #202020 0%, #161616 25%, #1D1D1D 50%, #0F0F0F 100%);
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    padding: 2%;
+    transition: transform 0.3s;
+    text-align: center; /* Centraliza o texto */
+}
+
+.cardSociais img {
+    max-width: 60%; /* Faz a imagem ocupar no máximo 100% da largura do card */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+
+}
+
+.cardSociais:hover {
+    transform: translateY(-5px); /* Efeito de hover para elevar o card */
+    box-shadow: 5px 5px 5px black;
+}
+
+
+.cardSociais:hover .bi-arrow-up-right-square {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.cardSociais:hover .bi-arrow-up-right-square-fill {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+
+.cardSociais .bi-arrow-up-right-square-fill {
+    position: absolute; /* Define o ícone como absoluto em relação ao card */
+    bottom: 10px;
+    right: 5%;
+    font-size: 2rem; /* Tamanho do ícone */
+    color: #FFC107;
+    opacity: 0;
+}
+
+.cardSociais .bi-arrow-up-right-square {
+    position: absolute; /* Define o ícone como absoluto em relação ao card */
+    bottom: 10px;
+    right: 5%;
+    font-size: 2rem; /* Tamanho do ícone */
+    color: #FFC107;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.cardSociais h1 {
+    font-size: 1.5rem; /* Ajusta o tamanho do título */
+    margin-top: 5%; /* Diminui o espaço entre o <p> e o <h1> */
+    color: white;
+}
+
+
+/* Mantém o fundo com gradiente */
+.background {
+    background: linear-gradient(to bottom right, #212121, #131313);
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        text-align: right; /* Alinha o conteúdo à direita na visualização mobile */
+    }
+    .btn{
+        margin-right: 5%;
+    }
+}

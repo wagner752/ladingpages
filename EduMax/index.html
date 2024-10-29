@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Friday | Empresa Fictícia de Cursos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="#"><img src="img/Logo EduMax.png" class="img-fluid" alt=""></a>
+        </div>
+    </nav>
+
+    <!-- Seção Principal -->
+    <section class="hero d-flex align-items-center justify-content-center">
+        <div class="hero-content">
+            <h1>Fique ligado na única promoção que faço no ano!</h1>
+            <p>Vai valer a pena esperar por isso!</p>
+        </div>
+    </section>
+
+    <!-- Formulário -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 form-section">
+                <h3 class="text-center">Cadastre-se para receber a oferta</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="course" class="form-label">Selecione o Curso</label>
+                        <select class="form-select" id="course" required>
+                            <option selected disabled>Escolha uma opção</option>
+                            <option>Curso de Marketing Digital</option>
+                            <option>Curso de Desenvolvimento Web</option>
+                            <option>Curso de Cibersegurança</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="humanCheck" required>
+                        <label class="form-check-label" for="humanCheck">Sou humano</label>
+                    </div>
+                    <button type="submit" class="btn btn-pink w-100" style="background-color: var(--pink);">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção de Ícones -->
+    <section class="icon-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="icon bi bi-trophy-fill"></i>
+                    <h5>Certificado de Qualidade</h5>
+                    <p>Professores e conteúdos de alta qualidade.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="icon bi bi-people-fill"></i>
+                    <h5>Comunidade Ativa</h5>
+                    <p>Interaja com outros alunos e tutores.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="icon bi bi-lightning-fill"></i>
+                    <h5>Aprendizagem Dinâmica</h5>
+                    <p>Conteúdos interativos e atividades práticas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 EduMax®. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap Icons e JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

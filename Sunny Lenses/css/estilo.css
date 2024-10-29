@@ -1,0 +1,242 @@
+ /* Estilo da Navbar */
+ .navbar {
+    background-color: #f9c101;
+}
+.navbar-brand img {
+    max-height: 50px;
+}
+/* Estilo da Imagem de Fundo */
+.hero {
+    background-image: url('../img/background\ Oculos.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    text-align: right;
+    padding: 0 2rem;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    max-width: 400px;
+    color: #322d2d;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke: 1px #322d2d;
+}
+/* Primeira Seção */
+.first-section {
+    background-color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+    min-height: 100vh;
+}
+.first-section h1 {
+    margin-bottom: 2rem;
+}
+.icon-circle {
+    background-color: #f9c101;
+    color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+.icon-text-group {
+    text-align: center;
+    margin: 1rem;
+}
+
+/* Segunda Seção */
+.second-section {
+    background-image: url(../img/backgroundoculosvarios.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+/* Texto no canto superior direito */
+.text-top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    color: white;
+}
+.text-top-right h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.text-top-right p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Estilos para Imagens Circulares */
+.circle-image {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px; /* Espaçamento entre retângulos */
+}
+
+.ret-image img {
+    width: 200px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ret1{
+    margin-top: 50%;
+}
+
+.ret2{
+    margin-top: 70%;
+}
+
+/* Posições das Imagens */
+.circle1 {
+    width: 18rem;
+    height: 18rem;
+    top: 20%;
+    left: 35%;
+}
+.circle2 {
+    width: 15rem;
+    height: 15rem;
+    bottom: 15%;
+    right: 30%;
+}
+.circle3 {
+    width: 10rem;
+    height: 10rem;
+    top: 50%;
+    right: 20%;
+}
+
+/* Terceira Seção */
+.third-section {
+    background-color: #E5EBF7;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+}
+
+.info-box {
+    background-color: #F9C101;
+    color: #000000;
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.icon {
+    font-size: 4rem;
+    margin: 10px 0;
+    color: black;
+}
+
+.info-box p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .third-section {
+        flex-direction: column;
+    }
+    
+    .info-box {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
+
+
+/* Ajustes Responsivos */
+@media (max-width: 768px) {
+    .circle1 {
+        top: 25%;
+        left: 10%;
+    }
+    .circle2 {
+        bottom: 10%;
+        right: 20%;
+    }
+    .circle3 {
+        top: 43%;
+        right: 10%;
+    }
+    .text-top-right {
+        top: 10px;
+        right: 10px;
+    }
+    .text-top-right h2 {
+        font-size: 1.2rem;
+    }
+    .text-top-right p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-height: 870px){
+    .rentagulos img{
+        display: none;
+    }
+}
+
+@media (max-width: 1280px){
+    .rentagulos img{
+        display: none;
+    }
+}
+
+/* Ajuste para Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .icons-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
