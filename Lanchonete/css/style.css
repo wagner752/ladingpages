@@ -1,0 +1,214 @@
+.navbar {
+    background-color: black;
+}
+.navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+}
+.navbar-nav .nav-link:hover {
+    color: #ccc;
+}
+
+.home {
+    background-image: url(../img/background.jpg), linear-gradient(to bottom, transparent, rgba(255, 0, 0, 0.5) 90%, red);
+    background-size: cover, cover; /* Mantém o fundo da imagem e do gradiente cobertos */
+    background-blend-mode: overlay; /* Faz a mistura entre a imagem e o gradiente */
+}
+
+.card {
+    width: 80%; 
+    max-width: 600px;
+    min-height: 50%;
+    background-color: black;
+    position: relative;
+    box-shadow: 5px 5px 5px black;
+}
+
+.cardDestaque{
+    width: 80%; 
+    max-width: 700px;
+    min-height: 50%;
+    background-color: black;
+    position: relative;
+    box-shadow: 5px 5px 5px black;
+    margin-left: 10%;
+}
+
+/* Estilização da faixa PROMOÇÃO */
+.cardDestaque::before {
+    content: "PROMOÇÃO";
+    position: absolute;
+    top: 35px;
+    left: -15px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 5px 20px;
+    transform: rotate(-45deg);
+    font-size: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 20%; 
+    position: absolute; 
+    top: 20px; 
+    left: 20px;
+}
+
+.card-title {
+    color: red;
+    margin-top: 20%;
+}
+
+.card-produto-titulo{
+    color: rgb(255, 0, 0);
+    margin-top: 5%;
+}
+
+.card-price{
+    color: white;
+}
+
+.cardProdutos{
+    max-width: 300px;
+    background-color: black;
+    box-shadow: 5px 5px 5px black;
+}
+
+.cardProdutos img{
+    margin: 2%;
+    width: 50%;
+    border: 2px solid white;
+}
+
+.imgDestaque{
+    margin: 2%;
+    border: 2px solid white;
+    max-width: 60%;
+}
+
+.mapa{
+    border: 5px solid black; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5)
+}
+
+.endereco{
+    color: white;
+    font-size: 1.1rem;
+}
+
+.carousel {
+    max-width: 100%; /* Ajuste de largura total */
+    min-width: 400px;
+}
+
+.carousel-inner {
+    width: 100%;
+    min-height: 250px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 5px black;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.foto-cliente{
+    width: 20%; 
+    border: 1px solid black; 
+    border-radius: 200px;
+}
+
+.depoimento{
+    gap: 20px
+}
+
+.texto-depoimento h1 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+.texto-depoimento p {
+    font-size: 1rem;
+    color: #dddddd;
+    margin: 0;
+}
+
+.ManchaFinal{
+    margin-top: -5%;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-logo {
+    max-width: 150px;
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #f1c40f; /* Cor amarela para destaque */
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f1c40f; /* Cor amarela ao passar o mouse */
+}
+
+.social-icons a {
+    display: flex;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.social-icon a{
+    transform: scale(1.1);
+}
+
+.footer-contact {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+
+@media (max-width: 576px) {
+    #img1 {
+        display: none;
+    }
+    .ManchaFinal{
+        margin-top: -11%;
+    }
+    .texto-depoimento p{
+        font-size: 0.7rem;
+    }
+}
