@@ -1,0 +1,67 @@
+.navbar{
+    background-color: black;
+}
+
+nav .btn{
+    background-color: #44D62C;
+    color: white ;
+}
+
+nav .btn:hover{
+    background-color: #111111;
+    color: white;
+}
+
+form .btn{
+    background-color: #44D62C;
+    color: white;
+}
+
+form .btn:hover{
+    background-color: #111111;
+    color: white;
+}
+
+.features-icons{
+    background-color: #111111;
+    color: white;
+}
+
+.features-icons-icon i{
+    color: #44D62C !important;
+}
+
+.showcase-text h2{
+    background-color: #111111;
+    color: #44D62C ;
+}
+
+.showcase-text {
+    
+    color: white;
+}
+
+.showcase{
+    background-color: #111111;
+}
+
+.testimonials{
+    background-color: black;
+}
+
+.testimonial-item h5{
+    color: #44D62C !important;
+}
+
+.testimonials h2{
+    color: #44D62C !important;
+}
+
+.footer{
+    background-color: black;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #44D62C;
+}
