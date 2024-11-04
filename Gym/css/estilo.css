@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+#home{
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center;
+}
+.custom-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #2892D5;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    fill: #2892D5; /* Define a cor do halter */
+}
+
+.logo-text {
+    color: #2892D5;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#secao1 {
+    background-color: #2892d5;
+    min-height: 100vh;
+}
+
+#secao1 h1{
+    color: white;
+}
+
+.text-title {
+    font-family: "Anton", sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+.btn{
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    background-color: black;
+}
+
+.btn:hover{
+    color: black;
+    background-color: #f8f9fa;
+}
+
+#secao2 {
+    background: url('../img/background-section3.png');
+    background-size: cover;
+    min-height: 100vh;
+    color: white;
+    padding: 50px 0;
+}
+
+#secao2 h2{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #2892D5;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.3rem;
+}
+
+.text-title {
+    font-family: "Anton", sans-serif;
+    color: #2892D5;
+    text-transform: uppercase;
+}
+
+.text-paragraph {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.textofinal{
+    font-size: 1.5rem;
+}
+
+#secao3 {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('../img/background-section4.png'); /* Substitua pelo caminho da sua imagem */
+    background-position: right;
+}
+
+#secao3 .btn{
+    max-width: 30%;
+}
+
+.left-content {
+    width: 50%;
+    background-color: #2892d5;
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%); /* Diagonal no lado esquerdo */
+    padding: 60px 40px; /* Posiciona o texto mais no topo e à esquerda */
+    position: relative;
+    z-index: 1;
+}
+
+.left-content h1 {
+    margin-top: 0;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.3rem;
+
+}
+
+#secao4 {
+    background-color: #000; /* Fundo preto */
+    height: 100vh;
+    padding: 60px 0; /* Espaçamento vertical */
+}
+
+.testimonial-card {
+    background-color: black; /* Fundo branco transparente para os depoimentos */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    position: relative; /* Para posicionar a citação */
+    height: 200px; /* Altura fixa para os cards */
+    
+    text-align: left; /* Alinhamento de texto à esquerda */
+}
+
+.quote {
+    font-size: 4rem; /* Tamanho da citação */
+    position: absolute;
+    top: -20px; /* Posição acima do card */
+    left: 10px; /* Alinhamento à esquerda */
+    color: #2892d5; /* Cor transparente */
+}
+
+.testimonial-text {
+    font-size: 1.2rem; /* Tamanho do texto do depoimento */
+    color: white; /* Cor do texto */
+    margin: 0; /* Remove margem padrão */
+    flex-grow: 1; /* Faz o texto ocupar o espaço disponível */
+}
+
+.testimonial-author {
+    font-size: 2rem; /* Tamanho do texto do autor */
+    color: #2892d5; /* Cor do autor */
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+#secao5 {
+    background-image: url('../img/background-section-5.png'); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover; /* Cobre toda a área da seção */
+    background-position: center; /* Centraliza a imagem */
+    height: 100vh; /* Altura da seção */
+    display: flex; /* Flexbox para alinhar o conteúdo */
+    flex-direction: column; /* Direção da coluna */
+    justify-content: space-between; /* Espaço entre os itens */
+    padding: 20px; /* Espaçamento interno */
+}
+
+#secao5 h1 {
+    margin-top: 0; /* Remove margem superior */
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: #2892d5;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .quote {
+        font-size: 3rem; /* Reduz o tamanho da citação em dispositivos menores */
+    }
+
+    .testimonial-text {
+        font-size: 1rem; /* Reduz o tamanho do texto do depoimento */
+    }
+}
+
+
+@media (max-width: 768px) {
+    #secao3 {
+        flex-direction: column;
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%;
+        clip-path: none;
+    }
+
+    .left-content {
+        padding: 20px;
+    }
+
+    #secao3{
+        background-position: center;
+    }
+
+    #secao3 .btn{
+        font-size: 8px;
+    }
+}
+
+/* Ajuste para tablets */
+@media (max-width: 992px) {
+    .custom-text {
+        font-size: 5rem;
+    }
+    #secao3 h2{
+        display: none;
+    }
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .custom-text {
+        font-size: 3.5rem;
+    }
+    .textofinal{
+        display: none;
+    }
+    #secao2 h2{
+        display: none;
+    }
+}
+
+/* Ajuste para telas bem pequenas (smartphones) */
+@media (max-width: 576px) {
+    .custom-text {
+        font-size: 2.5rem;
+    }
+    .textofinal{
+        display: none;
+    }
+    #secao3 h2{
+        display: none;
+    }
+    
+}
